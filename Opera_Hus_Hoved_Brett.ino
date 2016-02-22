@@ -25,6 +25,10 @@ void setup() {
 }
 
 void loop() {
+//Sjekker om den får meldinger fra porten.
+  while(Serial.available> 0){
+    Receive = Serial.read()
+  }
 //Forsterke lyset
   while (lightStrength <= 235){
     if (digitalRead(button1) == HIGH){
