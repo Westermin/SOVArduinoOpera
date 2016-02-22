@@ -1,4 +1,5 @@
 import serial
+
 ser = serial.Serial(port='/dev/ttyACM0', baudrate=9600)
 answer = "Hello"
 while answer != "Stop":
@@ -12,3 +13,5 @@ while answer != "Stop":
         ser.write("up")
     if "d" in answer:
         ser.write("down")
+    else:
+        print("I do not recognise that!")
