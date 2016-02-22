@@ -29,8 +29,15 @@ void loop() {
   while(Serial.available> 0){
     Receive = Serial.read()
     if (Receive == "up"){
+      delay(100);
+      lightStrength = lightStrength + 20;
+      delay(100);
+      analogWrite(lights[0], lightStrength);
+      analogWrite(lights[1], lightStrength);
+      analogWrite(lights[2], lightStrength);
     }
   }
+  
 //Forsterke lyset
   while (lightStrength <= 235){
     if (digitalRead(button1) == HIGH){
