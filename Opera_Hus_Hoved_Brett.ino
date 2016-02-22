@@ -28,6 +28,8 @@ void loop() {
 //Sjekker om den får meldinger fra porten.
   while(Serial.available> 0){
     Receive = Serial.read()
+    if (Receive == "up"){
+    }
   }
 //Forsterke lyset
   while (lightStrength <= 235){
