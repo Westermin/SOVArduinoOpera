@@ -1,2 +1,2 @@
 # SOVArduinoOpera
-This is our Arduino poject making a Opera Lego house light up :)
+This is our Arduino prodject making a Opera Lego house light up :)
